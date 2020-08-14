@@ -1,0 +1,44 @@
+msgid "Please follow the rules of using the campus network of GUANGDONG University of Technology. If you violate the rules, you will be held responsible for this procedure."
+msgstr "请遵守各高校校园网使用手则。如果违反规定，自觉承担相应的责任。"
+
+msgid "Enable Dr.com client"
+msgstr "启用Drcom客户端"
+
+msgid "Enable PPPoE Dial"
+msgstr "启用PPPoE拨号"
+
+msgid "Please select your dial interface. (Generally it's named WAN/wan)"
+msgstr "请选择您的拨号接口。（通常为WAN/wan）"
+
+msgid "Campus Network Account."
+msgstr "校园网账号。"
+
+msgid "Account password."
+msgstr "账号密码。"
+
+msgid "Mac address"
+msgstr "Mac地址"
+
+msgid "WAN/wan port Mac is used by default if left blank, you can also use the Mac on your computer. <br> Mac address format: Ma:c0:0A:dd:re:ss"
+msgstr "默认留空使用WAN/wan端口Mac，你也可以使用你电脑的Mac。 <br> Mac地址格式：Ma:c0:0A:dd:re:ss"
+
+msgid "Remote ip"
+msgstr "服务器ip地址"
+
+msgid "University Town Campus"
+msgstr "大学城校区"
+
+msgid "Longdong Campus / Dongfeng Road Campus"
+msgstr "龙洞校区/东风路校区"
+
+msgid "Choose or customize according to your school district."
+msgstr "根据你所在校区选择或自定义。"
+
+msgid "Fill in parameters based on the captured heartbeat packets, leaving the default if no changes are needed."
+msgstr "根据捕获的心跳包填充参数，如果不需要更改，则保留默认值。"
+
+msgid "It should be ticked if you version is 5.2.1(p)/6.0.0(p)."
+msgstr "如果你的版本为5.2.1(p)/6.0.0(p)，则勾选。"
+
+msgid "Configure client."
+msgstr "配置客户端"
