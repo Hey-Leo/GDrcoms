@@ -1,5 +1,5 @@
-msgid "Please follow the rules of using the campus network of GUANGDONG University of Technology. If you violate the rules, you will be held responsible for this procedure."
-msgstr "请遵守各高校校园网使用手则。如果违反规定，自觉承担相应的责任。"
+msgid "Please follow the manual rules of campus network. If you violate the regulations, you should assume the corresponding responsibility."
+msgstr "请遵守各高校校园网使用手则。如违反相关规定，自觉承担相应责任。"
 
 msgid "Enable Dr.com client"
 msgstr "启用Drcom客户端"
@@ -23,9 +23,9 @@ msgid "WAN/wan port Mac is used by default if left blank, you can also use the M
 msgstr "默认留空使用WAN/wan端口Mac，你也可以使用你电脑的Mac。 <br> Mac地址格式：Ma:c0:0A:dd:re:ss"
 
 msgid "Remote ip"
-msgstr "服务器ip地址"
+msgstr "认证服务器ip地址"
 
-msgid "University Town Campus"
+msgid "Higher Education Mega Center Campus"
 msgstr "大学城校区"
 
 msgid "Longdong Campus / Dongfeng Road Campus"
@@ -34,11 +34,33 @@ msgstr "龙洞校区/东风路校区"
 msgid "Choose or customize according to your school district."
 msgstr "根据你所在校区选择或自定义。"
 
-msgid "Fill in parameters based on the captured heartbeat packets, leaving the default if no changes are needed."
-msgstr "根据捕获的心跳包填充参数，如果不需要更改，则保留默认值。"
+msgid "Keep alive1 flag"
+msgstr "第一组数据包标志位"
 
-msgid "It should be ticked if you version is 5.2.1(p)/6.0.0(p)."
-msgstr "如果你的版本为5.2.1(p)/6.0.0(p)，则勾选。"
+msgid "The flag bits used to configure the first set of packets, If not set, the default is 00."
+msgstr "第一组数据包的标志位，不设置则默认为00。"
+
+msgid "Enable crypt"
+msgstr "启用加密校验"
+
+msgid "Used to configure whether the first set of packets is checked with encryption, or not, the default is not encrypted."
+msgstr "用于配置第一组数据包的校验是否使用加密校验，不配置则默认为不加密。"
+
+msgid "Guangdong University Of Technology campus network self-service system"
+msgstr "广东工业大学校园网自助服务系统"
 
 msgid "Configure client."
 msgstr "配置客户端"
+
+msgid "General version_(p) Settings"
+msgstr "(p)版基本设置"
+
+msgid "Advanced Settings"
+msgstr "高级设置"
+
+msgid "Disclaimer"
+msgstr "免责声明"
+
+msgid "Link"
+msgstr "链接"
+
