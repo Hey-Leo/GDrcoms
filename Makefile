@@ -32,17 +32,21 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci
-	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
+	$(CP) ./luasrc/* $(1)/usr/lib/lua/luci
 	$(INSTALL_DIR) $(1)/usr/bin
-	cp $(PKG_BUILD_DIR)/src/gdut-drcom $(1)/usr/bin	
+	$(CP) $(PKG_BUILD_DIR)/src/gdut-drcom $(1)/usr/bin	
 	$(INSTALL_DIR) $(1)/
-	cp -pR ./root/* $(1)/
+	$(CP) ./root/* $(1)/
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
 	po2lmo ./po/zh-cn/gdut-drcom.po $(1)/usr/lib/lua/luci/i18n/gdut-drcom.zh-cn.lmo
 endef
 
 define Package/$(PKG_NAME)/postinst
 #!/bin/sh
+chmod +x /etc/config/gdut_drcom
+chmod +x /etc/init.d/gdut-drcom
+chmod +x /usr/bin/gdut-drcom-patch
+chmod +x /usr/bin/gdut-drcom-unpatch
 echo "post install: patching ppp.sh"
 sed -i '/#added by gdut-drcom/d' /lib/netifd/proto/ppp.sh
 sed -i '/proto_run_command/i username=$$(echo -e "\\r\\n$$username")    #added by gdut-drcom!' /lib/netifd/proto/ppp.sh

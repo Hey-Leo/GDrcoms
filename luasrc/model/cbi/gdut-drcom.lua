@@ -54,15 +54,15 @@ macaddr.datatype="macaddr"
 
 remote_ip = s:option(Value, "remote_ip", translate("Remote ip"),translate("Choose or customize according to your school district."))
 remote_ip.datatype="ipaddr"
-remote_ip:value("10.0.3.2", translate("University Town Campus"))
+remote_ip:value("10.0.3.2", translate("Higher Education Mega Center Campus"))
 remote_ip:value("10.0.3.6", translate("Longdong Campus / Dongfeng Road Campus"))
 
-keep_alive_flag = s:option(Value, "keep_alive1_flag", translate("Keep alive1 flag"),translate("Fill in parameters based on the captured heartbeat packets, leaving the default if no changes are needed."))
+keep_alive_flag = s:option(Value, "keep_alive1_flag", translate("Keep alive1 flag"),translate("The flag bits used to configure the first set of packets, If not set, the default is 00."))
 
-enable_crypt = s:option(Flag, "enable_crypt", translate("Enable crypt"),translate("It should be ticked if you version is 5.2.1(p)/6.0.0(p)."))
+enable_crypt = s:option(Flag, "enable_crypt", translate("Enable crypt"),translate("Used to configure whether the first set of packets is checked with encryption, or not, the default is not encrypted."))
 
 
-s = m:section(TypedSection, "gdut_drcom", "Disclaimer", translate("Please follow the rules of using the campus network of GUANGDONG University of Technology. If you violate the rules, you will be held responsible for this procedure."))
+s = m:section(TypedSection, "gdut_drcom", "Disclaimer", translate("Please follow the manual rules of campus network. If you violate the regulations, you should assume the corresponding responsibility."))
 s.addremove = false
 s.anonymous = true
 
