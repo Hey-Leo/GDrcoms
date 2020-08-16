@@ -1,5 +1,5 @@
-msgid "Please follow the manual rules of campus network. If you violate the regulations, you should assume the corresponding responsibility."
-msgstr "请遵守各高校校园网使用手则。如违反相关规定，自觉承担相应责任。"
+msgid "Dr.com is the client that emulates PC Dr.com to send heartbeat packets."
+msgstr "Dr.com是模拟电脑Dr.com城市热点发送心跳包的客户端"
 
 msgid "Enable Dr.com client"
 msgstr "启用Drcom客户端"
@@ -46,11 +46,11 @@ msgstr "启用加密校验"
 msgid "Used to configure whether the first set of packets is checked with encryption, or not, the default is not encrypted."
 msgstr "用于配置第一组数据包的校验是否使用加密校验，不配置则默认为不加密。"
 
-msgid "Guangdong University Of Technology campus network self-service system"
-msgstr "广东工业大学校园网自助服务系统"
+msgid "Please follow the manual rules of campus network. If you violate the regulations, you should assume the corresponding responsibility."
+msgstr "请遵守各高校校园网使用手则，如违反相关规定，你需承担相应责任。"
 
-msgid "Configure client."
-msgstr "配置客户端"
+msgid "Guangdong University Of Technology campus network self-service system: http://222.200.98.8:1800/Self/nav_login"
+msgstr "广东工业大学校园网自助服务系统：http://222.200.98.8:1800/Self/nav_login"
 
 msgid "General version_(p) Settings"
 msgstr "(p)版基本设置"
