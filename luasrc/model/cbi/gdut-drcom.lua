@@ -9,7 +9,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 require("luci.sys")
 
-m = Map("gdut_drcom", translate("Dr.com"), translate("Configure client."))
+m = Map("gdut_drcom", translate("Dr.com"), translate("Dr.com is the client that emulates PC Dr.com to send heartbeat packets."))
 
 m:section(SimpleSection).template  = "gdut-drcom/gdut-drcom_status"
 
@@ -67,7 +67,7 @@ s.addremove = false
 s.anonymous = true
 
 s:tab("AnQuan", translate("用户责任书"))
-AnQuan = s:taboption("AnQuan", Value, "AnQuan", translate("责任书"), translate("广东工业大学校园网学生用户责任书"))
+AnQuan = s:taboption("AnQuan", Value, "AnQuan", translate("责任书"), translate("校园网学生用户责任书"))
 AnQuan.template = "cbi/tvalue"
 AnQuan.rows = 23
 AnQuan.rmempty = true
@@ -87,7 +87,7 @@ function ChengNuo.cfgvalue(self, section)
 end
 
 
-s = m:section(TypedSection, "gdut_drcom", "Link", translate("广东工业大学校园网自助服务系统：http://222.200.98.8:1800/Self/nav_login"))
+s = m:section(TypedSection, "gdut_drcom", "Link", translate("Guangdong University Of Technology campus network self-service system: http://222.200.98.8:1800/Self/nav_login"))
 s.addremove = false
 s.anonymous = true
 
