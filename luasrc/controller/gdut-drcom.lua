@@ -5,8 +5,8 @@ function index()
 		return
 	end
 
---	entry({"admin", "network", "gdut-drcom"}, cbi("gdut-drcom"), _("gdut-drcom client"), 100).dependent=true--
---	entry({"admin","gdut-drcom"}, cbi("gdut-drcom"), _("Dr.com"), 2).dependent=true--
+--	entry({"admin", "network", "gdut-drcom"}, cbi("gdut-drcom"), _("Dr.com"), 100).dependent=true--
+--	entry({"admin","gdut-drcom"}, cbi("gdut-drcom"), _("Dr.com"), 3).dependent=true--
 	entry({"admin", "services", "gdut-drcom"}, cbi("gdut-drcom"), _("Dr.com"), 58).dependent=true
 
 	entry({"admin","services","gdut-drcom","status"},call("act_status")).leaf=true
