@@ -4,7 +4,25 @@ m = Map("gdut_drcom", translate("Dr.com"), translate("Dr.com is the client that 
 
 m:section(SimpleSection).template  = "gdut-drcom/gdut-drcom_status"
 
-s = m:section(TypedSection, "gdut_drcom", "General version_(p) Settings")
+
+s = m:section(TypedSection, "gdut_drcom", translate("客户端配置"),
+translate("LuCI版本的Dr.COM配置.")..
+"<br />"
+..[[<br /><strong>]]
+..[[<a href="https://github.com/drcoms/drcom-generic/tree/master/openwrt" target="_blank">]]
+..translate("查看本页面的相关自定义修改和配置说明。")
+..[[</a>]]
+..[[</strong><br />]]
+..[[<br /><strong>]]
+..[[<a href="http://222.200.98.8:1800/Self/nav_login" target="_blank">]]
+..translate("Guangdong University Of Technology campus network self-service system")
+..[[</a>]]
+..[[</strong><br />]]
+)
+s.anonymous = true
+
+
+s = m:section(TypedSection, "gdut_drcom", "General Settings")
 s.addremove = false
 s.anonymous = true
 
@@ -77,10 +95,6 @@ function ChengNuo.cfgvalue(self, section)
 	return nixio.fs.readfile("/etc/config/ChengNuo")
 end
 
-
-s = m:section(TypedSection, "gdut_drcom", "Link", translate("Guangdong University Of Technology campus network self-service system: http://222.200.98.8:1800/Self/nav_login"))
-s.addremove = false
-s.anonymous = true
 
 local apply = luci.http.formvalue("cbi.apply")
 if apply then
