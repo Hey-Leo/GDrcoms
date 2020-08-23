@@ -49,11 +49,11 @@ msgstr "用于配置第一组数据包的校验是否使用加密校验，不配
 msgid "Please follow the manual rules of campus network. If you violate the regulations, you should assume the corresponding responsibility."
 msgstr "请遵守各高校校园网使用手则，如违反相关规定，你需承担相应责任。"
 
-msgid "Guangdong University Of Technology campus network self-service system: http://222.200.98.8:1800/Self/nav_login"
-msgstr "广东工业大学校园网自助服务系统：http://222.200.98.8:1800/Self/nav_login"
+msgid "Guangdong University Of Technology campus network self-service system"
+msgstr "广东工业大学校园网自助服务系统"
 
-msgid "General version_(p) Settings"
-msgstr "(p)版基本设置"
+msgid "General Settings"
+msgstr "基础设置"
 
 msgid "Advanced Settings"
 msgstr "高级设置"
