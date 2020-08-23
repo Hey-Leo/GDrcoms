@@ -19,7 +19,7 @@ msgstr "账号密码。"
 msgid "Mac address"
 msgstr "Mac地址"
 
-msgid "WAN/wan port Mac is used by default if left blank, you can also use the Mac on your computer. <br> Mac address format: Ma:c0:0A:dd:re:ss"
+msgid "WAN/wan port MAC is used by default if left blank, you can also use the MAC on your computer. <br> MAC address format: Ma:C0:0A:Dd:36:EE"
 msgstr "默认留空使用WAN/wan端口Mac，你也可以使用你电脑的Mac。 <br> Mac地址格式：Ma:c0:0A:dd:re:ss"
 
 msgid "Remote ip"

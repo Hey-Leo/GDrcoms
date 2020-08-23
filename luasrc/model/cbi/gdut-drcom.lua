@@ -58,7 +58,7 @@ s = m:section(TypedSection, "gdut_drcom", "Advanced Settings", translate(""))
 s.addremove = false
 s.anonymous = true
 
-macaddr = s:option(Value, "macaddr", translate("Mac address"),translate("WAN/wan port Mac is used by default if left blank, you can also use the Mac on your computer. <br> Mac address format: Ma:c0:0A:dd:re:ss"))
+macaddr = s:option(Value, "macaddr", translate("MAC address"),translate("WAN/wan port MAC is used by default if left blank, you can also use the MAC on your computer. <br> MAC address format: Ma:C0:0A:Dd:36:EE"))
 macaddr.datatype="macaddr"
 
 remote_ip = s:option(Value, "remote_ip", translate("Remote ip"),translate("Choose or customize according to your school district."))
