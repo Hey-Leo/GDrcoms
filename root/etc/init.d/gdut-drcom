@@ -27,19 +27,19 @@ start_service() {
 		return
 	fi
 
-        if [ "$enable_dial"x != "0"x ]; then
-#               echo "$ifname" "$username" "$password"
-                /usr/bin/gdut-drcom-patch
-#               uci set network.${interface}.ifname="$ifname"
-                uci set network.${interface}.proto="pppoe"
-                uci set network.${interface}.username="$username"
-                uci set network.${interface}.password="$password"
-#               uci set network.${interface}._orig_ifname='eth0.2'
-#               uci set network.${interface}._orig_bridge='false'
-                uci commit
+	if [ "$enable_dial"x != "0"x ]; then
+#		echo "$ifname" "$username" "$password"
+		/usr/bin/gdut-drcom-patch
+#		uci set network.${interface}.ifname="$ifname"
+		uci set network.${interface}.proto="pppoe"
+		uci set network.${interface}.username="$username"
+		uci set network.${interface}.password="$password"
+#		uci set network.${interface}._orig_ifname='eth0.2'
+#		uci set network.${interface}._orig_bridge='false'
+		uci commit
 	else
 		/usr/bin/gdut-drcom-unpatch
-        fi
+	fi
 
 	if [ -n "$macaddr" ]; then
 #		uci set network.wan_dev.macaddr="$macaddr"
