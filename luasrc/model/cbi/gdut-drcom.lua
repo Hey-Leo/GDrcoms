@@ -5,19 +5,34 @@ m = Map("gdut_drcom", translate("Dr.com"), translate("Dr.com is the client that 
 m:section(SimpleSection).template  = "gdut-drcom/gdut-drcom_status"
 
 
+local router_ip = luci.sys.exec("uci get network.lan.ipaddr")
+
 s = m:section(TypedSection, "gdut_drcom", translate("客户端配置"),
 translate("LuCI版本的Dr.COM配置.")..
 "<br />"
+
+.. "<br>系统状态概览：<a href='http://" .. router_ip .. "/cgi-bin/luci/admin/status/overview'>" ..translate("概览")
+..[[</a>]]
+.. "<br>无线WiFi状态：<a href='http://" .. router_ip .. "/cgi-bin/luci/admin/network/wireless'>" ..translate("无线")
+..[[</a>]]
+.. "<br>定时重启：<a href='http://" .. router_ip .. "/cgi-bin/luci/admin/system/autoreboot'>" ..translate("定时重启")
+..[[</a>]]
+.. "<br>文件传输：<a href='http://" .. router_ip .. "/cgi-bin/luci/admin/system/filetransfer'>" ..translate("文件传输")
+..[[</a>]]
+.. "<br>备份升级：<a href='http://" .. router_ip .. "/cgi-bin/luci/admin/system/flashops'>" ..translate("备份升级")
+..[[</a>]]
+
+..[[<br /><br /><strong>]]
+..[[<a href="http://222.200.98.8:1800/Self/nav_login" target="_blank">]]
+..translate("Guangdong University Of Technology campus network self-service system")
+..[[</a>]]
+..[[</strong><br />]]
 ..[[<br /><strong>]]
 ..[[<a href="https://github.com/drcoms/drcom-generic/tree/master/openwrt" target="_blank">]]
 ..translate("查看本页面的相关自定义修改和配置说明。")
 ..[[</a>]]
 ..[[</strong><br />]]
-..[[<br /><strong>]]
-..[[<a href="http://222.200.98.8:1800/Self/nav_login" target="_blank">]]
-..translate("Guangdong University Of Technology campus network self-service system")
-..[[</a>]]
-..[[</strong><br />]]
+
 )
 s.anonymous = true
 
@@ -102,3 +117,4 @@ if apply then
 end
 
 return m
+
