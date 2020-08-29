@@ -23,6 +23,11 @@ translate("LuCI版本的Dr.COM配置.")..
 ..[[</a>]]
 
 ..[[<br /><br /><strong>]]
+..[[<a href="http://222.200.98.8:1800/Dr.COM/Client/Dr.Com.zip" target="_blank">]]
+..translate("下载Dr.com客户端")
+..[[</a>]]
+..[[</strong><br />]]
+..[[<br /><strong>]]
 ..[[<a href="http://222.200.98.8:1800/Self/nav_login" target="_blank">]]
 ..translate("Guangdong University Of Technology campus network self-service system")
 ..[[</a>]]
