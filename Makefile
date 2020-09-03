@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=gdut-drcom
-PKG_VERSION:=3.0.1
+PKG_VERSION:=3.1.2
 PKG_RELEASE:=168
 
 PKG_LICENSE:=GPL-3.0+
