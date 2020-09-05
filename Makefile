@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=gdut-drcom
-PKG_VERSION:=3.1.2
+PKG_VERSION:=3.1.3
 PKG_RELEASE:=168
 
 PKG_LICENSE:=GPL-3.0+
@@ -43,10 +43,10 @@ endef
 
 define Package/$(PKG_NAME)/postinst
 #!/bin/sh
-chmod +x /etc/config/gdut_drcom
-chmod +x /etc/init.d/gdut-drcom
-chmod +x /usr/bin/gdut-drcom-patch
-chmod +x /usr/bin/gdut-drcom-unpatch
+chmod 755 /etc/config/gdut_drcom
+chmod 755 /etc/init.d/gdut-drcom
+chmod 755 /usr/bin/gdut-drcom-patch
+chmod 755 /usr/bin/gdut-drcom-unpatch
 echo "post install: patching ppp.sh"
 sed -i '/#added by gdut-drcom/d' /lib/netifd/proto/ppp.sh
 sed -i '/proto_run_command/i username=$$(echo -e "\\r\\n$$username")    #added by gdut-drcom!' /lib/netifd/proto/ppp.sh
