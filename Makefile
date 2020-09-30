@@ -43,10 +43,6 @@ endef
 
 define Package/$(PKG_NAME)/postinst
 #!/bin/sh
-chmod 755 /etc/config/gdut_drcom
-chmod 755 /etc/init.d/gdut-drcom
-chmod 755 /usr/bin/gdut-drcom-patch
-chmod 755 /usr/bin/gdut-drcom-unpatch
 echo "post install: patching ppp.sh"
 sed -i '/#added by gdut-drcom/d' /lib/netifd/proto/ppp.sh
 sed -i '/proto_run_command/i username=$$(echo -e "\\r\\n$$username")    #added by gdut-drcom!' /lib/netifd/proto/ppp.sh
