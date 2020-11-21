@@ -41,13 +41,13 @@ define Package/$(PKG_NAME)/install
 	po2lmo ./po/zh-cn/gdut-drcom.po $(1)/usr/lib/lua/luci/i18n/gdut-drcom.zh-cn.lmo
 endef
 
-define Package/$(PKG_NAME)/postinst
-#!/bin/sh
-echo "post install: patching ppp.sh"
-sed -i '/#added by gdut-drcom/d' /lib/netifd/proto/ppp.sh
-sed -i '/proto_run_command/i username=$$(echo -e "\\r\\n$$username")    #added by gdut-drcom!' /lib/netifd/proto/ppp.sh
-echo "patched!"
-endef
+# define Package/$(PKG_NAME)/postinst
+# #!/bin/sh
+# echo "post install: patching ppp.sh"
+# sed -i '/#added by gdut-drcom/d' /lib/netifd/proto/ppp.sh
+# sed -i '/proto_run_command/i username=$$(echo -e "\\r\\n$$username")    #added by gdut-drcom!' /lib/netifd/proto/ppp.sh
+# echo "patched!"
+# endef
 
 define Package/$(PKG_NAME)/prerm
 #!/bin/sh
